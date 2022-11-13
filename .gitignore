@@ -29,3 +29,6 @@ htmlcov/
 .direnv
 
 .github/**
+
+# DOCKER .env file
+.env_file
