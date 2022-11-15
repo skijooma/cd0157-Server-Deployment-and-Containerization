@@ -73,6 +73,12 @@ cd cd0157-Server-Deployment-and-Containerization/
 └── trust.json     #ToDo 
 ```
 
+### Env. variables (Contents of the .env_file)
+```
+JWT_SECRET='myjwtsecret'
+LOG_LEVEL=DEBUG
+```
+
      
 ## Project completion steps
 
