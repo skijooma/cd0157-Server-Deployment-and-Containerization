@@ -29,8 +29,5 @@ htmlcov/
 
 .github/**
 
-# DOCKER .env file
-.env_file
-
 # Local virtualenv directory
 venv

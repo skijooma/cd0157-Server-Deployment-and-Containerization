@@ -1,20 +1,20 @@
 # Deploying a Flask API
 
-This is the project starter repo for the course Server Deployment, Containerization, and Testing.
+This project is for the Udacity FullStack NanoDegree course: Server Deployment, Containerization, and Testing.
 
-In this project you will containerize and deploy a Flask API to a Kubernetes cluster using Docker, AWS EKS, CodePipeline, and CodeBuild.
+The goal of the project is to containerize and deploy a Flask API to a Kubernetes cluster using Docker, AWS EKS, CodePipeline, and CodeBuild.
 
-The Flask app that will be used for this project consists of a simple API with three endpoints:
+A Flask app was provided as starter code by the Udacity that was used a basis, which was a simple API with three endpoints:
 
 - `GET '/'`: This is a simple health check, which returns the response 'Healthy'. 
 - `POST '/auth'`: This takes a email and password as json arguments and returns a JWT based on a custom secret.
 - `GET '/contents'`: This requires a valid JWT, and returns the un-encrpyted contents of that token. 
 
-The app relies on a secret set as the environment variable `JWT_SECRET` to produce a JWT. The built-in Flask server is adequate for local development, but not production, so you will be using the production-ready [Gunicorn](https://gunicorn.org/) server when deploying the app.
+The app relied on a secret set as the environment variable `JWT_SECRET` to produce a JWT. The built-in Flask server is adequate for local development, but not production, so a production-ready [Gunicorn](https://gunicorn.org/) server was when deploying the app.
 
 
 
-## Prerequisites
+## Prerequisites for running
 
 * Docker Desktop - Installation instructions for all OSes can be found <a href="https://docs.docker.com/install/" target="_blank">here</a>.
 * Git: <a href="https://git-scm.com/downloads" target="_blank">Download and install Git</a> for your system. 
@@ -74,9 +74,9 @@ cd cd0157-Server-Deployment-and-Containerization/
 ```
 
      
-## Project Steps
+## Project completion steps
 
-Completing the project involves several steps:
+Completing the project involved several steps:
 
 1. Write a Dockerfile for a simple Flask API
 2. Build and test the container locally
